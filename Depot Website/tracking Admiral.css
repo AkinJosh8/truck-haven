@@ -1,0 +1,289 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+nav{
+    padding: 20px 10px;
+}
+.closeNav{
+    backdrop-filter: blur(50px);
+    box-shadow: 0px 0px 30px rgba(192, 59, 59, 0.37);
+    border: 2px solid rgba(245, 245, 245, 0.18);
+}
+.trucknav{
+    padding-top: -10px;
+    margin-left: 80px;
+    border-radius: 10px; 
+}
+ul{
+    display: flex;
+    list-style: none;
+    float: right;
+    margin-right: 80px; 
+}
+li{
+    padding: 10px;
+    font-weight: bolder;
+}
+li a{
+    text-decoration: none;
+    color: rgb(228, 60, 60); 
+    border: none;
+}
+li a:hover{
+    color: rgb(173, 29, 10);
+    border-top: 2px solid rgb(173, 29, 10);
+    border-bottom: 2px solid rgb(173, 29, 10);
+    cursor: pointer;
+    transition: 0.9s; 
+}
+ul li a{
+    padding: 20px 16px;
+    justify-content: space-between;
+}
+#buttn{
+    display: none;
+}
+.long{
+    position: relative;
+    width: 100%;
+    height: 250px;
+}
+.shipment{
+    position: absolute;
+    color: rgb(252, 249, 249);
+    top: 25%;
+    left: 6%;
+    font-size: 40px;
+}
+.locate{
+    width: 80%;
+    height: 570px;
+    display: block;
+    margin-bottom: 30px;
+
+}
+.locator{
+    padding: 10px;
+    width: 35%;
+    margin-left: 450px;
+}
+.location-img{
+    width: 100%;
+    height: auto;
+}
+.tech{
+    width: 100%;
+    margin-left: 120px;
+}
+.sub-tech1, .sub-tech2, .sub-tech3, .sub-tech4{
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: left;
+    margin-top: -10px;
+}
+.sub-tech1{
+    margin-bottom: 20px;
+}
+.sub-tech2{
+    margin-bottom: 20px;
+}
+.sub-tech3{
+    margin-bottom: 30px;
+}
+footer{
+    width: 100%;
+    height: 400px;
+    border: none;
+    background-color: rgb(240, 66, 66);
+}
+.row6{
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 5% 10px;
+    width: 100%;
+}
+.col6{
+    border: none;
+    margin-bottom: 30px;
+    flex-grow: 1;
+    width: 30%;
+}
+.col6 a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    text-align: left;
+}
+.col6 a:hover{
+    color: black;
+}
+h5{
+    font-size: 18px;
+    padding: 10px;
+    color: white;
+}
+#copyright{
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+.logo{
+    margin-left: 40px;
+    padding: 20px;
+}
+
+
+@media (max-width: 900px) {
+.trucknav { 
+    margin-left: 24px; 
+    width: 180px; 
+    height: auto; }
+
+.locator { width: 90%; margin: 12px auto; padding: 12px; }
+.locate { width: 100%; height: 420px; margin: 12px 0; }
+
+.columns, .tracking-columns { display: flex; flex-direction: column; gap: 18px; }
+
+footer .row6 { flex-direction: column; align-items: stretch; padding: 32px 6%; }
+.col6 { width: 100%; margin-bottom: 18px; }
+h1, .shipment { font-size: clamp(24px, 4.8vw, 40px); }
+p, label { font-size: 16px; line-height: 1.45; }
+}
+
+@media (max-width: 600px) {
+  #buttn { 
+    display: block; 
+    position: absolute; 
+    font-size: 15px;
+    right: 6%; 
+    top: 4%; 
+    z-index: 1200;
+    color: #000;
+    padding: 5px;
+    border: none;
+    touch-action: manipulation;
+    border-radius: 5px;
+    &:hover{
+        cursor: pointer;
+        background: maroon;
+        color: #fff;
+    } 
+}
+nav ul { 
+    display: none; 
+}
+nav ul.openNav {
+    display: flex;
+    position: fixed;
+    inset: 0 0 auto 0;       
+    top: 0;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    gap: 0;
+    padding: 18px 24px; 
+    background: rgba(185, 67, 96, 0.95);
+    color: #fff;
+    height: 95vh;
+    width: 70%;
+    z-index: 1100;
+  }
+nav ul.openNav li {
+    margin: 12px 0;
+    padding: 10px 6px;
+    width: 100%;
+    box-sizing: border-box;
+}
+nav ul.openNav li a {
+    color: #fff;
+    font-size: 20px;
+    display: block;
+    width: 100%;
+}
+.logo { 
+    width: 160px; 
+    margin-left: 8px; 
+}
+.trucknav {
+    margin-left: 12px; 
+    width: 110px; 
+    height: auto; 
+}
+.log{
+    margin-bottom: -100px;
+}
+a, button { 
+    touch-action: manipulation; 
+    -webkit-tap-highlight-color: rgba(0,0,0,0.04); 
+}
+.long { 
+    position: relative;
+    width: 100%;
+    height: auto; 
+}
+.shipment { 
+    position: absolute;
+    font-size: 25px; 
+    top: 16%; 
+    left: 9%; 
+    text-align: left;
+}
+.locate { 
+    margin-top: 100px;
+    width: 100%; 
+    height: auto; 
+    margin-left: 10px;
+}
+.locator { 
+    margin: 12px auto; 
+    padding: 12px; 
+}
+.tech{
+    margin-left: 20px;
+    margin: 20px;
+}
+.sub-tech1, .sub-tech2, .sub-tech3{
+    width: 85%;   
+    font-size: 15px;
+    line-height: 1.6;
+    text-align: left;
+    margin-top: -10px;
+}
+.sub-tech4{
+    width: 85%;   
+    font-size: 15px;
+    line-height: 1.6;
+    text-align: left;
+    margin-top: -20px;
+
+}
+ footer { 
+    padding: 10px; 
+    height: auto; 
+}
+.row6 { 
+    display: block; 
+    padding: 18px 6% 0; 
+}
+.col6 { 
+    width: 100%; 
+    margin-bottom: 10px; 
+}
+.logo{
+    margin-left: -20px;
+}
+h5{
+    font-size: 20px;
+}
+.col6 a{
+    font-size: 15px;
+}
+}
+
+ 
+
+

@@ -1,0 +1,876 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+nav{
+    padding: 20px 10px;
+}
+.closeNav{
+    backdrop-filter: blur(20px);
+    box-shadow: 0px 0px 30px rgba(192, 59, 59, 0.37);
+    border: 2px solid rgba(245, 245, 245, 0.18);
+    border-radius: 50px;
+}
+.trucknav{
+    padding-top: -10px;
+    margin-left: 80px;
+    border-radius: 10px; 
+}
+@keyframes move {
+    50%{
+        transform: rotate(360deg);
+    }100%{
+        transform: scale(1.2);
+    }
+}
+ul{
+    display: flex;
+    list-style: none;
+    float: right;
+    margin-right: 80px; 
+}
+li{
+    padding: 10px;
+    font-weight: bolder;
+}
+li a{
+    text-decoration: none;
+    color: rgb(228, 60, 60); 
+    border: none;
+    &:hover{
+        color: rgb(173, 29, 10);
+        border-top: 2px solid rgb(173, 29, 10);
+        border-bottom: 2px solid rgb(173, 29, 10);
+        cursor: pointer;
+        animation: move 3s ease infinite;
+    } 
+}
+@keyframes move {
+    50%{
+        transform: scale(1.2);
+    }
+}
+ul li a{
+    padding: 20px 16px;
+    justify-content: space-between;
+}
+#buttn{
+    display: none;
+}
+.first-class{
+    margin-bottom: 80px;
+}
+.haul{
+    width: 100%;
+    height: 600px;
+    position: relative;
+}
+h1{
+    position: absolute;
+    top: 30%;
+    right: 10%;
+    font-size: 80px;
+    text-align: center;
+    margin-left: 80px;
+    color: white; 
+}
+.below{
+    position: absolute;
+    color: white;
+    top: 60%;
+    right: 20%;
+    width: 70%;
+    font-size: 25px;
+    text-align: center;
+}
+.contact{
+    position: absolute;
+    top: 75%;
+    right: 50%;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: red;
+    border: none;
+}
+.contact a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+button .contact:hover{
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    
+}
+table{
+    border: 1px solid green;
+    border: none;
+    border-radius: 10px;
+    width: 35%;
+    background-color: white;
+    right: 50%;
+}
+td{
+    border-right: 2px solid rgb(212, 33, 33);
+    padding: 20px;
+}
+td:last-child{
+    border: none;
+}
+td a{
+    color: black;
+}
+th{
+    color: red;
+    padding: 10px;
+    font-size: 18px;
+}
+.resource{
+    position: absolute;
+    top: 90%;
+    right: 35%;
+    box-shadow: 4px 4px 4px black;
+}
+.resource:hover{
+    box-shadow: 4px 4px 4px rgba(223, 9, 9, 0.932);
+}
+.row1::after{
+    display: table;
+    content: "";
+    clear: both;
+}
+.column{
+    float: left;
+    padding: 20px;
+    flex: 1;
+}
+.row1{
+    display: flex;
+    flex-wrap: wrap;
+}
+.column-left1{
+    width: 40%;
+    margin-left: 20px;
+    
+}
+
+.reddish{
+    margin-left: 60px;
+    width: 50%;
+    height: auto;
+    border: 2px solid black;
+    border-top-right-radius: 80px;
+    border-bottom-left-radius: 80px;
+}
+.column-right1{
+    width: 50%;
+    height: 300px; 
+}
+.about{
+    width: 100%;
+    font-size: 35px;
+    font-weight: bold;
+    color: rgba(230, 19, 19, 0.884);
+    margin-bottom: 20px;
+}
+.force-1, .force-2{
+    width: 100%;
+    line-height: 1.6;
+    text-align: left;
+    margin-top: -10px;
+}
+.force-1{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.force-2{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.read{
+    color: white;
+    background-color: rgba(230, 19, 19, 0.884);
+    border: none;
+    padding: 15px;
+    border-radius: 20px;
+    &:hover{
+        background-color: black;
+        cursor: pointer;
+        box-shadow: 4px 4px 4px black;
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+}
+.read a{
+    text-decoration: none;
+    color: rgb(245, 245, 245);
+}
+.featured{
+    background-color: rgb(221, 94, 94);
+    width: 100%;
+    height: 500px;
+}
+
+.rect14{
+    margin-left: 80px;
+    width: 70%;
+    height: auto;   
+}
+.row2::after{
+    display: table;
+    content: "";
+    clear: both;
+}
+.column-left2{
+    float: left;
+    margin-top: 70px;
+    width: 40%; 
+}
+.column-right2{
+    width: 50%;
+    height: 400px;
+    margin-left: 520px;
+    padding-top: 30px;
+    color: #fff;
+}
+.feat{
+    padding-top: 20px;
+    margin-bottom: 20px;
+    font-size: 35px;
+    color: #fff;
+}
+.lease-text1, .lease-text2, 
+.lease-text3, .link-text{
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: left;
+    margin-top: -10px;
+}
+.lease-text1{
+    margin-bottom: 20px;
+}
+.lease-text2{
+    margin-bottom: 20px;
+}
+.lease-text3{
+    margin-bottom: 20px;
+}
+.link-text a{
+    color: #fff;
+}
+.row4{
+    display: flex;
+    margin-bottom: 30px;
+}
+.row4::after{
+    display: table;
+    content: "";
+    clear: both;
+}
+.column-left4{
+    float: left;
+    padding: 20px;
+    width: 40%;
+}
+.rect17{
+    margin-left: 60px;
+    height: auto;
+    width: 80%;
+    border-radius: 10px;
+}
+.column-right4{
+    width: 50%;
+    height: 400px;
+}
+.edging{
+    width: 100%;
+    padding-top: 20px;
+    margin-left: 30px;
+    font-size: 35px;
+    font-weight: bold;
+    color: rgba(230, 19, 19, 0.884);
+}
+.edge{
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+    font-size: 15px;
+}
+.edging{
+    width: 50%;
+    font-size: 35px;
+    font-weight: bold;
+    color: rgba(230, 19, 19, 0.884);
+}
+.art-1, .art-2, .art-3, .art-4{
+    width: 100%;
+}
+.need{
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: left;
+    margin-top: -10px;
+}
+.state{
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: left;
+    margin-top: -10px;
+}
+.edging{
+    width: 50%;
+    font-size: 35px;
+    font-weight: bold;
+    color: rgba(230, 19, 19, 0.884);
+}
+.city{
+    margin: 30px;
+}
+.location{
+    text-align: center;
+    font-size: 35px;
+}
+.niger{
+   width: 30%;
+   height: auto;
+   margin-left: 400px;
+   margin-top: 20px;
+}
+.major{
+    width: 50%;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-top: 20px;
+    margin-left: 300px;
+}
+.news{
+    border: none;
+    width: 100%;
+    height: 680px;
+    background-color: rgb(241, 240, 237);
+}
+.events{
+    text-align: center;
+    padding: 20px;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+.row3{
+    display: flex;
+}
+.row3::after{
+    display: table;
+    content: "";
+    clear: both;
+}
+.col{
+    float: left;
+    padding: 20px;
+    width: 50%;
+}
+.col-left3{
+    border: none;
+    border-radius: 15px;
+    background-color: rgb(168, 81, 81);
+    width: 400px;
+    margin-left: 150px;
+    height: 500px;
+    position: relative;
+    box-shadow: 5px 5px 5px rgb(63, 61, 61);
+}
+.col-right3{
+    position: relative;
+    border: none;
+    border-radius: 15px;
+    background-color: rgb(168, 81, 81);
+    width: 400px;
+    margin-left: 150px;
+    height: 500px; 
+    box-shadow: 5px 5px 5px rgb(63, 61, 61);
+}
+.trailer,.wheel{
+    width: 400px;
+    border-radius: 15px;
+    height: 250px;
+    
+}
+.Jan-1{
+    position: absolute;
+    background-color: rgb(245, 237, 237);
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+    top: 53%;
+    right: 2%;
+    margin-left: 0px;
+}
+.Jan-2{
+    position: absolute;
+    background-color: rgb(245, 237, 237);
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+    top: 53%;
+    right: 2%;
+    margin-left: 0px;
+}
+
+.fleet{
+    margin-top: 50px;
+    border: hidden; 
+}
+.contract{
+    margin-top: -30px;
+    margin-left: 13px;
+    color: white;
+    word-spacing: 2px;
+}
+.comp{
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 2px;
+    color: white;
+    font-size: 16px;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: left;
+
+    margin-bottom: 20px;
+    
+}
+#class-1, #class-2{
+    margin: 10px;
+    padding-top: 20px;
+    text-decoration: none;    
+    color: #fff;
+    font-weight: bold;
+
+    &:hover{
+    color: #000;
+    }
+}
+footer{
+    width: 100%;
+    height: 400px;
+    border: none;
+    background-color: rgb(240, 66, 66);
+}
+.row6{
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 5% 10px;
+    width: 100%;
+}
+.col6{
+    border: none;
+    margin-bottom: 30px;
+    flex-grow: 1;
+    width: 30%;
+}
+.col6 a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    text-align: left;
+}
+.col6 a:hover{
+    color: black;
+}
+h5{
+    font-size: 18px;
+    padding: 10px;
+    color: white;
+}
+#copyright{
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+.logo{
+    margin-left: 40px;
+    padding: 20px;
+}
+
+
+@media (max-width: 900px) {
+nav { 
+    padding: 16px 12px; 
+}
+.logo { 
+    width: 200px; 
+    margin-left: 16px; 
+}
+.haul { 
+    height: 520px; 
+}
+h1 { 
+    font-size: clamp(34px, 6vw, 56px); top: 24%; right: 6%; 
+}
+.below { 
+    width: 72%; 
+    font-size: 1rem; 
+    right: 8%; 
+    top: 44%; 
+}
+.row1, .row2, .row3, .row4 { 
+    flex-direction: column; 
+    align-items: stretch; 
+}
+.column-left1, .column-right1, 
+.column-left2, .column-right2,
+.column-left4, .column-right4, 
+.col-left3, .col-right3 {
+    width: 100% !important;
+    margin: 0 0 var(--gap) 0;
+    padding: 12px;
+}
+.column-right1 {
+    margin-top: 10px; 
+}
+.featured, .news { 
+    height: auto; 
+}
+.rect14, .rect17 {
+    width: 100%; 
+    margin: 16px 0; 
+}
+.edging, .about { 
+    text-align: left; 
+    width: 100%; 
+    margin-left: 12px; 
+}
+footer .row6 { 
+    flex-direction: column; 
+    align-items: flex-start; 
+    padding: 30px 5% 16px; 
+}
+.col6 { 
+    width: 100%; 
+    margin-bottom: 18px; 
+}
+.contact { 
+    padding: 12px 18px; 
+}
+}
+
+@media (max-width: 600px) {
+#buttn { 
+    display: block; 
+    position: absolute; 
+    font-size: 15px;
+    right: 6%; 
+    top: 4%; 
+    z-index: 1200;
+    color: #000;
+    padding: 5px;
+    border: none;
+    touch-action: manipulation;
+    border-radius: 5px;
+    &:hover{
+        cursor: pointer;
+        background: maroon;
+        color: #fff;
+    } 
+}
+nav ul { 
+    display: none; 
+}
+nav ul.openNav {
+    display: flex;
+    position: fixed;
+    inset: 0 0 auto 0;       
+    top: 0;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    gap: 0;
+    padding: 18px 24px; 
+    background: rgba(185, 67, 96, 0.95);
+    color: #fff;
+    height: 95vh;
+    width: 70%;
+    z-index: 1100;
+  }
+nav ul.openNav li {
+    margin: 12px 0;
+    padding: 10px 6px;
+    width: 100%;
+    box-sizing: border-box;
+}
+nav ul.openNav li a {
+    color: #fff;
+    font-size: 20px;
+    display: block;
+    width: 100%;
+}
+.logo { 
+    width: 160px; 
+    margin-left: 8px; 
+}
+.trucknav {
+    margin-left: 12px; 
+    width: 110px; 
+    height: auto; 
+}
+.first-class{
+    margin-bottom: 280px;
+}
+.haul { 
+    width: 100%; 
+    height: auto; 
+    position: relative; 
+}
+h1 {
+    position: absolute;
+    top: 13%;
+    right: 0;
+    left: 0;
+    width: 70%;
+    margin-left: 70px;
+    text-align: left;
+    font-size: 22px;
+  }
+.below {
+    position: absolute;
+    top: 22%;
+    right: 0;
+    left: 0;
+    width: 88%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 12px;
+    color: #fff;
+  }
+.contact {
+    position: absolute;
+    top: 28%;
+    right: 0;
+    left: 0;
+    margin: 18px auto 0;
+    width: 50%;
+    display: block;
+    text-align: center;
+}
+.resource{
+    position: absolute;
+    top: 42%;
+    right: 0;
+    left: 0;
+    box-shadow: 5px 5px 5px 2px rgb(102, 102, 102);
+}
+table { 
+    width: 53%; 
+    margin: 14px auto; 
+    display: block; 
+    border-collapse: collapse; 
+}
+td { 
+    display: block; 
+    width: 100%; 
+    border: none; 
+    border-bottom: 2px solid rgb(212,33,33); 
+}
+td a{
+    font-size: 15px;
+}
+th { 
+    font-size: 22px; 
+    text-align: left; 
+}
+
+.row1{
+    height: 650px;
+}
+.about{
+    font-size: 25px;
+    text-align: left;
+    margin-left: 0;
+}
+.reddish{
+    height: auto;
+    width: 80%;
+    margin-left: 20px;
+}
+.column-right1{
+    margin-top: 20px;
+    
+}
+.force-1, .force-2{
+    margin-top: -10px;
+    font-size: 15px;
+    line-height: 1.6;
+    text-align: left;
+}
+.force-2{
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+.featured{
+    height: 780px;
+}
+.feat{
+    font-size: 25px;
+}
+.column-left2{
+    margin-top: 0;
+}
+.rect14{
+    height: auto;
+    width: 80%;
+    margin-left: 30px;
+}
+.column-right2{
+    margin: 10;
+}
+.lease-text1, .lease-text2, 
+.lease-text3, .link-text{
+    margin-top: -10px;
+    font-size: 15px;
+    line-height: 1.6;
+    text-align: left;
+}
+.row4{
+    height: 720px;
+}
+.column-left4{
+    margin-top: 30px;
+}
+
+.rect17{
+    width: 80%;
+    height: auto;
+    margin-left: 40px;
+}
+.column-right4{
+    margin-top: -40px;
+}
+.edging{
+    font-size: 25px;
+    text-align: center;
+}
+.edge{
+    width: 100%;
+    height: auto;
+    margin-top: 0px;
+}
+.art-1, .art-2, .art-3, .art-4{ 
+    display: flex;
+    width: 100%; 
+    border-bottom: 1px solid;
+}
+.need{
+    border: none;
+    width: 20%;
+    height: 5%;
+    margin-top: 5px;
+    font-size: 15px;
+    line-height: 1.4;
+    text-align: left;
+}
+.state{
+    width: 100%;
+    margin-top: -5px;
+    font-size: 15px;
+    line-height: 1.4;
+    text-align: left;
+}
+.city{
+   height: 350px;
+}
+.location{
+    font-size: 25px;
+    text-align: center;
+    line-height: 1.4;
+}
+.niger{
+    width: 100%;
+    height: auto;
+    margin-left: 10px;
+}
+.major{
+    width: 100%;
+    text-align: justify;
+    margin-left: 0px;
+    font-size: 15px;
+    font-size: 15px;
+    line-height: 1.4;
+    text-align: left;
+}
+.news{
+    margin: 0;
+}
+.events{
+    font-size: 20px;
+    text-align: center;
+}
+.row3{
+    margin-top: -30px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-left: 20px;
+}
+.col-left3, .col-right3{
+    background: gray;
+    height: 100%;
+    margin: 10px;
+} 
+.Jan-1{
+    top: 41.5%;
+    right: 0;
+}
+.Jan-2{
+    top: 41%;
+    right: 0;
+}
+.trailer, .wheel { 
+    margin-left: -10px;
+    margin-top: -10px;
+    width: 108%; 
+    height: auto; 
+}
+.fleet{
+    margin-top: 20px;
+}
+.contract{
+    margin-top: -10px;
+}
+.comp{
+    margin-bottom: 10px;
+    font-size: 15px;
+    line-height: 1.4;
+    text-align: left;
+}
+#class{
+    text-decoration: underline;
+    padding: 50px;
+}
+footer { 
+    padding: 10px; 
+    height: auto; 
+}
+.row6 { 
+    display: block; 
+    padding: 18px 6% 0; 
+}
+.col6 { 
+    width: 100%; 
+    margin-bottom: 10px; 
+}
+.logo{
+    margin-left: -20px;
+}
+h5{
+    font-size: 20px;
+}
+.col6 a{
+    font-size: 15px;
+}
+}
