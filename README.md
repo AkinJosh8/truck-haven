@@ -22,7 +22,7 @@ Clean layout with modern CSS transitions and high-quality imagery.
 A section to update users on company milestones and awards.
 
 ## Built With
-This project was developed using a modern frontend stack to ensure speed and performance:
+# This project was developed using a modern frontend stack to ensure speed and performance:
 
 ## HTML5: Semantic markup for better SEO and accessibility.
 
@@ -32,13 +32,4 @@ This project was developed using a modern frontend stack to ensure speed and per
 
 ## Github: Used for continuous deployment and hosting.
 
-## Project Structure
-├── index.html              # Landing Page
-├── about admiral.html      # About Us Page
-├── service admiral.html    # Services Description
-├── tracking admiral.html   # Shipment Tracking UI
-├── career admiral.html     # Job Opportunities
-├── contact admiral.html    # Contact Information
-├── css/                    # Stylesheets
-└── Project images/         # Optimized image assets
 
